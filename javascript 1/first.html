@@ -3,19 +3,19 @@
 <head>
 
 	<script type="text/javascript">
-		function firstFunction() {
+		function addTwoNumber() {
 			var a = 10;
 			var b = 20;
 			alert(a + b);
 		}
-		function secondFunction() {
+		function details() {
 			var pi = 3.14;
 			var name = "Anna";
 			var address = 'Miskolc';
 			console.log(pi + ' ' + name + ' ' + address);
 
 		}
-		function thirdFunction(count) {
+		function writeRandomNumbers(count) {
 			for (i = 0; i < count; i++) {
 				console.log(getRandomNumber());
 
@@ -25,15 +25,15 @@
 			return Math.random()
 
 		}
-		function fourthFunction() {
+		function writeCars() {
 			var cars = ["Fiat", "Volvo", "BMW"];
 			console.log(cars[0] + ' ' + cars[1] + ' ' + cars[2]);
 		}
-		function fifthFunction() {
+		function writePerson() {
 			var person = { firstname: "Dávid", lastname: "Kiss", age: 64, address: "Miskolc" };
 			console.log(person.firstname + ' ' + person.lastname + ' ' + person.age + ' ' + person.address);
 		}
-		function sixthFunction() {
+		function writeBookDetails() {
 			var book = {
 				writer: 'Writer1',
 				title: 'Title1',
@@ -51,7 +51,7 @@
 			book.add(1000);
 			console.log(book.tax());
 		}
-		function seventhFunction() {
+		function writeFruits() {
 			var fruits, i;
 
 			fruits = ["Banana", "Lime", "Apple", "Mango"];
@@ -60,7 +60,7 @@
 				console.log(fruits[i]);
 			}
 		}
-		function ninethFunction() {
+		function writeDays() {
 			var day;
 			switch (new Date().getDay()) {
 				case 0:
@@ -116,14 +116,14 @@
 		<h1/>
 		<br>
 		<br>
-		<input type="button" value="One" onClick="firstFunction();" />
-		<input type="button" value="Two" onClick="secondFunction();" />
-		<input type="button" value="Three" onClick="thirdFunction(3);" />
-		<input type="button" value="Four" onClick="fourthFunction();" />
-		<input type="button" value="Five" onClick="fifthFunction();" />
-		<input type="button" value="Six" onClick="sixthFunction();" />
-		<input type="button" value="Seven" onClick="seventhFunction();" />
-		<input type="button" value="Eight" onClick="ninethFunction();" />
+		<input type="button" value="Add two number" onClick="addTwoNumber();" />
+		<input type="button" value="Details" onClick="details();" />
+		<input type="button" value="Random number" onClick="writeRandomNumbers(3);" />
+		<input type="button" value="Cars "onClick="writeCars();" />
+		<input type="button" value="Person" onClick="writePerson();" />
+		<input type="button" value="Book" onClick="writeBookDetails();" />
+		<input type="button" value="Fruits" onClick="writeFruits();" />
+		<input type="button" value="Days" onClick="writeDays();" />
 	    <div onmouseover="above();">Drag the mouse over this text </div>
 </body>
 
