@@ -1,0 +1,56 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript">
+		function calculate() {
+			a = document.getElementById("a").value;
+			b = document.getElementById("b").value;
+			if (document.getElementById("mult").checked) {
+				document.getElementById("result").innerHTML = a * b;
+			}
+			if (document.getElementById("div").checked) {
+				document.getElementById("result").innerHTML = a / b;
+			}
+			if (document.getElementById("add").checked) {
+				document.getElementById("result").innerHTML = Number(a) + Number(b);
+			}
+			if (document.getElementById("sub").checked) {
+				document.getElementById("result").innerHTML = a - b;
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+	Give two number:
+	<br>
+	<br>
+	<form>
+		A=
+		<input id="a">
+		<br>
+		<br> B=
+		<input id="b">
+		<br>
+		<br>
+
+		<input type="radio" id="mult" name="operation" checked/>A*B
+		<br>
+		<br>
+		<input type="radio" id="div" name="operation" />A/B
+		<br>
+		<br>
+		<input type="radio" id="add" name="operation" />A+B
+		<br>
+		<br>
+		<input type="radio" id="sub" name="operation" />A-B
+		<br>
+		<br>
+		<input type=button value="Calculate" onClick="calculate();" /> The result is:
+		<span id="result"></span>
+	</form>
+</body>
+
+</html>

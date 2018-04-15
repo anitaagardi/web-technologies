@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="text/javascript">
+    function calculate() {
+      a = document.getElementById("a").value;
+      b = document.getElementById("b").value;
+
+      document.getElementById("val").innerHTML = a * b;
+    }
+
+  </script>
+</head>
+
+<body>
+  Give two number:
+  <br>
+  <br>
+  <form>
+    A=
+    <input id="a">
+    <br>
+    <br> B=
+    <input id="b">
+    <br>
+    <br> A*B=
+    <span id="val"> </span>
+    <br>
+    <br>
+    <input type=button value="Calculate" onClick="calculate();">
+  </form>
+</body>
+
+</html>

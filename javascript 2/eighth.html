@@ -1,0 +1,47 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript">
+		function createHTML1() {
+			create1 = document.getElementById("create1");
+			create1.innerHTML = "<h1> This h1 was created by create 1 </h1>";
+
+		}
+		function createHTML2() {
+			create2 = document.getElementById("create2");
+			var c = document.createElement("h1");
+			c.innerHTML = 'This h1 was created by create 2';
+			create2.appendChild(c);
+
+		}
+		function createHTML3() {
+			var create3 = document.getElementById("create3");
+			var c = document.createElement("li");
+			var textnode = document.createTextNode("Water");
+			c.appendChild(textnode);
+
+			create3.insertBefore(c, create3.childNodes[0]);
+
+		}
+
+	</script>
+</head>
+
+<body>
+	<br>
+	<br>
+
+	<input type=button value="Create HTML 1" onClick="createHTML1();">
+	<input type=button value="Create HTML 2" onClick="createHTML2();">
+	<input type=button value="Create HTML 3" onClick="createHTML3();">
+	<p id="create1"></p>
+	<p id="create2"> </p>
+	<ul id="create3">
+		<li>Coffee</li>
+		<li>Tea</li>
+	</ul>
+
+</body>
+
+</html>

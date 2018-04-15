@@ -1,0 +1,73 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript">
+		function validate() {
+			name = document.getElementById("name").value;
+			age = document.getElementById("age").value;
+			address = document.getElementById("address").value;
+			school = document.getElementById("school").value;
+			email = document.getElementById("email").value;
+			if (name == "") {
+				alert("Name is empty!");
+				return;
+			}
+			if (age == "") {
+				alert("Age is empty!");
+				return;
+			}
+			if (address == "") {
+				alert("Address is empty!");
+				return;
+			}
+			if (school == "") {
+				alert("School is empty!");
+				return;
+			}
+			//email validate
+			if (email == "") {
+				alert("Email is empty!");
+				return;
+			}
+			if (email.search("@") == -1) {
+				alert("Email must contain @!");
+				return;
+			}
+
+			alert("OK");
+
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<br>
+	<br>
+	<form>
+		Name:
+		<input id="name" type="text" />
+		<br> Age:
+		<input id="age" type="number" />
+		<br> Address:
+		<input id="address" type="text" />
+		<br> School:
+		<input id="school" type="text" />
+		<br> Color:
+		<br>
+		<input type="checkbox" name="colorCheckbox" id="red" checked/>Red
+		<br/>
+		<input type="checkbox" name="colorCheckbox" id="green" />Green
+		<br/>
+		<input type="checkbox" name="colorCheckbox" id="blue" />Blue
+		<br/> Email:
+		<input id="email" type="text" />
+		<br>
+
+		<input type=button value="Validate" onClick="validate();">
+	</form>
+</body>
+
+</html>

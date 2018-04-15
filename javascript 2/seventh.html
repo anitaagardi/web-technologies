@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<!--
+Try it on online JS editor
+   -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript">
+		function writeData() {
+			pData = document.getElementById("pData");
+			var datas = "";
+			datas += "History lenght: " + history.length + "<br/>";
+			datas += "App name: " + navigator.appName + "<br/>";
+			datas += "App version" + navigator.appVersion + "<br/>";
+			datas += "Cookie enabled? " + navigator.cookieEnabled + "<br/>";
+
+			pData.innerHTML = datas;
+		}
+
+		function createCookie() {
+			document.cookie = "user=User1;";
+			alert(document.cookie);
+		}
+
+	</script>
+</head>
+
+<body>
+	Give two number:
+	<br>
+	<br>
+	<form>
+		<input type=button value="Alert" onClick="alert('Hello');" />
+		<br/>
+		<br/>
+		<input type=button value="Write Datas" onClick="writeData();" />
+		<br/>
+		<br/>
+		<input type=button value="Reload" onClick="location.reload();" />
+		<br/>
+		<br/>
+		<input type=button value="History back" onClick="history.back();" />
+		<br/>
+		<br/>
+		<input type=button value="Cookie" onClick="createCookie();" />
+		<br/>
+		<br/>
+		<p id="pData" />
+
+
+	</form>
+</body>
+
+</html>
