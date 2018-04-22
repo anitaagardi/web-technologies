@@ -1,0 +1,63 @@
+<html>
+   <head>
+      <title>jQuery UI Effects</title>
+      
+      <script src="jquery-3.3.1.min.js"></script>
+	  <script>
+  $( function() {
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+      var selectedEffect = $( "#effectTypes" ).val();
+ 
+      // Most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect === "scale" ) {
+        options = { percent: 50 };
+      } else if ( selectedEffect === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+ 
+      // Run the effect
+      $( "#effect" ).toggle( selectedEffect, options, 500 );
+    };
+ 
+    // Set effect from select menu value
+    $( "#button" ).on( "click", function() {
+      runEffect();
+    });
+  } );
+  </script>
+	  
+	  
+   </head>
+   <body>
+      <div class="toggler">
+         <div id="effect" >
+            <h3>jQuery</h3>
+            <p>Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+			Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+            </p>
+         </div>
+      </div>
+      <font size="2">Effect:</font>
+      <select name="effects" id="effectTypes">
+         <option value="blind">Blind</option>
+         <option value="bounce">Bounce</option>
+         <option value="clip">Clip</option>
+         <option value="drop">Drop</option>
+         <option value="explode">Explode</option>
+         <option value="fold">Fold</option>
+         <option value="highlight">Highlight</option>
+         <option value="puff">Puff</option>
+         <option value="pulsate">Pulsate</option>
+         <option value="scale">Scale</option>
+         <option value="shake">Shake</option>
+         <option value="size">Size</option>
+         <option value="slide">Slide</option>
+      </select>
+      
+      <button id="button">Use</button>
+   </body>
+</html>

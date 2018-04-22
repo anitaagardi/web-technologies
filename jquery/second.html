@@ -1,0 +1,26 @@
+<html>
+	<head>
+	<script src="jquery-3.3.1.min.js"></script>
+		<script>
+		$(function() {
+			var div = $("div");
+			div.on("click", function() {
+				$(this).width("200px");
+			});
+		setTimeout(function() {
+			div.trigger('click');
+			}, 5000);
+		});
+		</script>
+	</head>
+	<body>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Nam mollis massa non elementum porta. Interdum et malesuada 
+			fames ac ante ipsum primis in faucibus. Cras vitae pharetra ipsum. 
+			Pellentesque porttitor et purus eu efficitur. Proin placerat lacinia nibh,
+			ac commodo enim imperdiet eu.
+			</p>
+		</div>
+	</body>
+</html>

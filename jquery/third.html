@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<button id="btn" type="button">Animation!</button><br>
+	<img id="picture" src="forest.jpg"><br>
+	<script>
+		$('#btn').click(function() {
+			$("#picture").animate({height:'400px',opacity:'0.5'},"slow");
+			$("#picture").animate({width:'400px',opacity:'1'},"normal");
+			$("#picture").animate({height:'100px',opacity:'0.5'},"slow");
+			$("#picture").animate({width:'100px',opacity:'1'},"normal");
+			$("#picture").animate({height:'182px',opacity:'0.5'},"fast");
+			$("#picture").animate({width:'260px',opacity:'1'},"fast");
+		});
+	</script>
+</body>
+</html>

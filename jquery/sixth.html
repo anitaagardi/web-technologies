@@ -1,0 +1,34 @@
+<html>
+	<head>
+	<script src="jquery-3.3.1.min.js"></script>
+		<script>
+		$(function() {
+			
+			$("p").click( function() {
+				$(this).css("font-size","30px");
+			});
+			$("#one").click( function() {
+				$(this).css("background-color","purple");
+			});
+			$(".two").click( function() {
+				$(this).css("background-color","blue");
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div>
+			<p id="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Nam mollis massa non elementum porta. Interdum et malesuada 
+			fames ac ante ipsum primis in faucibus. Cras vitae pharetra ipsum. 
+			Pellentesque porttitor et purus eu efficitur. Proin placerat lacinia nibh,
+			ac commodo enim imperdiet eu.
+			</p>
+			<p>liquam a elementum nibh, nec elementum est. Nunc porttito </p>
+			<div class="two">Mauris orci ipsum, mattis eu sapien sed, rutrum luctus dolor.
+			Mauris ac velit molestie, sollicitudin turpis sit amet, faucibus quam
+			</div>
+			
+		</div>
+	</body>
+</html>

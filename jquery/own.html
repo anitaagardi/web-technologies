@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	   <script src="jquery-3.3.1.min.js"></script>
+      <script type ="text/javascript">
+	  $(function() {
+	  $('#btn').click(function () {
+	   a = $("#a").val();
+	   b = $("#b").val();
+		if($("#mult").prop("checked")){
+			$("#result").html( a*b);
+	   }
+	    if($("#div").prop("checked")){
+			$("#result").html( a/b);
+	   }
+	    if($("#add").prop("checked")){
+			$("#result").html(  Number(a)+Number(b));
+	   }
+	   if($("#sub").prop("checked")){
+			$("#result").html( a-b);
+	   }
+	});
+});  
+	  </script>
+   </head>
+   <body>
+      Give two number:
+      <br><br>
+      <form>
+         A= <input id="a"><br><br>
+         B= <input id="b"><br><br>
+         
+          <input type="radio" id="mult" name="operation" checked/>A*B <br><br>
+		  <input type="radio" id="div" name="operation"/>A/B <br><br>
+		  <input type="radio" id="add" name="operation"/>A+B <br><br>
+		  <input type="radio" id="sub" name="operation"/>A-B <br><br>
+         <input type=button value="Calculate" id="btn"/>
+		 The result is: <span id="result"></span> 
+      </form>
+   </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<script src="jquery-3.3.1.min.js"></script>
+		<script>
+		$(function() {
+			var h1Content=$("<h1>This is a h1 content </h1>");
+			$("div").click( function() {
+				$(this).html("Hello World");
+				$(this).append(h1Content);
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Nam mollis massa non elementum porta. Interdum et malesuada 
+			fames ac ante ipsum primis in faucibus. Cras vitae pharetra ipsum. 
+			Pellentesque porttitor et purus eu efficitur. Proin placerat lacinia nibh,
+			ac commodo enim imperdiet eu.
+			</p>
+		</div>
+	</body>
+</html>

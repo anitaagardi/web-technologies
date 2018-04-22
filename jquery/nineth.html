@@ -1,0 +1,59 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	   <script src="jquery-3.3.1.min.js"></script>
+      <script type ="text/javascript">
+	
+	  $(function() {
+	  
+	  //elem elveszíti a fókuszt
+		$("#a").blur(function(){
+			$("#result").html("blur");
+		});
+	//megváltozik az elem értéke
+		$("#a").change(function(){
+			$("#result").html("change");
+		});
+	//elem fókuszt kap
+		$("#a").focus(function(){
+			$("#result").html("focus");
+		});	
+		
+		$("#form").submit(function(event){
+            event.preventDefault();
+			$("#result").html("submit");
+		});	
+		
+		$("#a").keydown(function(){
+			$("#keyresult").html("keydown");
+		});	
+		
+		$("#a").keypress(function(){
+			$("#keyresult").html("keypress");
+		});	
+		
+		$("#a").keyup(function(){
+			$("#keyresult").html("keyup");
+		});	
+	   
+	});
+  
+	  </script>
+   </head>
+   <body>
+      Give two number:
+      <br><br>
+      <form id="form">
+         A= <input id="a"><br><br>
+         B= <input id="b"><br><br>
+         
+          <input type="radio" id="mult" name="operation" checked/>A*B <br><br>
+		  <input type="radio" id="div" name="operation"/>A/B <br><br>
+		  <input type="radio" id="add" name="operation"/>A+B <br><br>
+		  <input type="radio" id="sub" name="operation"/>A-B <br><br>
+         <input type="submit" value="Calculate" id="btn"/>
+		 The result is: <span id="result"></span>
+		The keyresult is: <span id="keyresult"></span>		 
+      </form>
+   </body>
+</html>
