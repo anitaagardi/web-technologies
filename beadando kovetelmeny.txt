@@ -1,0 +1,18 @@
+HTML:
+-kép
+-táblázat
+-form
+-címsor
+-legalább 3 link
+-lista
+
+css:
+-külsõ css
+-menü kialakítás (menü sáv, lásd pl. mintabeadandó- késõbb küldöm)
+-egyéb teszõleges formázás
+
+javascript, jquery:
+-külsõ fájlból
+-form ellenõrzés
+-animáció
+-elem css tulajdonságának változtatása
