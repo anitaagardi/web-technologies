@@ -1,0 +1,51 @@
+<html>
+
+<body>
+
+    <h2>JavaScript Statements</h2>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    <p id="five"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+
+        var x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+        /*
+        outputs
+        */
+        document.getElementById("one").innerHTML =
+            "The value of z is " + z + ".";
+        z = x * y;
+        document.getElementById("two").innerHTML =
+            "The value of z is " + z + ".";
+        z = x / y;
+        document.getElementById("three").innerHTML =
+            "The value of z is " + z + ".";
+        z = x - y;
+        document.getElementById("four").innerHTML =
+            "The value of z is " + z + ".";
+        z = "Hello";
+        document.getElementById("five").innerHTML =
+            "The value of z is " + z + ".";
+        var a = 2 + 3 + "5"
+        document.getElementById("demo").innerHTML = a;
+        x = 10;
+        x += 5;
+        document.getElementById("demo2").innerHTML = x;
+        x++;
+        document.getElementById("demo3").innerHTML = x;
+        x--;
+        document.getElementById("demo4").innerHTML = x;
+    </script>
+
+</body>
+
+</html>

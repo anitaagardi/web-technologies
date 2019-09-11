@@ -1,0 +1,13 @@
+{
+   "firstName": "Kódoló",
+   "lastName": "Marcipán",
+   "address": {
+      "streetAddress": "JavaScript street 4132.",
+      "city": "Kódváros",
+      "state": "Kódvölgy",
+      "postalCode": "210021"
+   },
+   "phoneNumbers": [
+      "0670 555-1234", "0646 555-4567"
+   ]
+}

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+
+		function above() {
+			alert(Math.random());
+
+		}
+		function Student(name, code, specialist) {
+
+			this.name = name;
+			this.code = code;
+			this.specialist = specialist;
+		}
+		function writeStudent() {
+			var stud = new Student('Student1', 'Code1', 'Specialist1');
+			console.log(stud.name + ' ' + stud.code + ' ' + stud.specialist);
+
+		}
+
+	</script>
+</head>
+
+<body>
+	<div onmouseover="above();">Drop the mouse over the text</div>
+	<input type="button" onclick="writeStudent()"  value="Student" />
+
+
+
+</body>
+
+</html>

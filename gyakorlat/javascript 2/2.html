@@ -1,0 +1,29 @@
+<html>
+
+<body>
+
+    <h2>Finding HTML Elements by Id</h2>
+
+    <p id="intro">Hello World!</p>
+    <p>This example demonstrates the
+        <b>getElementsById</b> method.</p>
+
+    <p id="demo"></p>
+    <p class="intro">The DOM is very useful.</p>
+    <p class="intro">This example demonstrates the
+        <b>getElementsByClassName</b> method.</p>
+    <script>
+        var myElement = document.getElementById("intro");
+        document.getElementById("demo").innerHTML =
+            "The text from the intro paragraph is " + myElement.innerHTML;
+        var y = document.getElementsByTagName("p");
+        console.log(y[0].innerHTML);
+        var z =document.getElementsByClassName("intro");
+        console.log(z[0].innerHTML);
+        var p_intro = document.querySelectorAll("p.intro");
+        console.log(p_intro[0].innerHTML);
+    </script>
+
+</body>
+
+</html>

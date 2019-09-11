@@ -1,0 +1,25 @@
+<html>
+
+<head>
+	<script type="text/javascript">
+		function change() {
+			document.getElementById("p2").style.color = "blue";
+			document.getElementById("p2").style.fontFamily = "Arial";
+			document.getElementById("p2").style.fontSize = "larger";
+			document.getElementsByTagName("p")[0].style.color = "red";
+		}
+	</script>
+</head>
+
+<body>
+	<h1 onclick="change()"> Click</h1>
+	<p id="p1">Hello World!</p>
+	<p id="p2">Hello World!</p>
+
+
+
+	<p>The paragraph above was changed by a script.</p>
+
+</body>
+
+</html>

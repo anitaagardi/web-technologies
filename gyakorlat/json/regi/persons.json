@@ -1,0 +1,39 @@
+[{
+   "firstName": "Kódoló1",
+   "lastName": "Marcipán1",
+   "address": {
+      "streetAddress": "JavaScript street 4132.",
+      "city": "Kódváros1",
+      "state": "Kódvölgyvölgy1",
+      "postalCode": "210021"
+   },
+   "phoneNumbers": [
+      "0670 555-1234", "0646 555-4567"
+   ]
+},
+{
+   "firstName": "Kódoló2",
+   "lastName": "Marcipán2",
+   "address": {
+      "streetAddress": "JavaScript street 4132.",
+      "city": "Kódváros2",
+      "state": "Kódvölgyvölgy2",
+      "postalCode": "210021"
+   },
+   "phoneNumbers": [
+      "0670 555-1234", "0646 555-4567"
+   ]
+},
+{
+   "firstName": "Kódoló3",
+   "lastName": "Marcipán3",
+   "address": {
+      "streetAddress": "JavaScript street 4132.",
+      "city": "Kódváros3",
+      "state": "Kódvölgyvölgy3",
+      "postalCode": "210021"
+   },
+   "phoneNumbers": [
+      "0670 555-1234", "0646 555-4567"
+   ]
+}]

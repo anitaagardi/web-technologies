@@ -1,0 +1,130 @@
+<html>
+
+<head>
+
+	<script type="text/javascript">
+		function addTwoNumber() {
+			var a = 10;
+			var b = 20;
+			alert(a + b);
+		}
+		function details() {
+			var pi = 3.14;
+			var name = "Anna";
+			var address = 'Miskolc';
+			console.log(pi + ' ' + name + ' ' + address);
+
+		}
+		function writeRandomNumbers(count) {
+			for (i = 0; i < count; i++) {
+				console.log(getRandomNumber());
+
+			}
+		}
+		function getRandomNumber() {
+			return Math.random()
+
+		}
+		function writeCars() {
+			var cars = ["Fiat", "Volvo", "BMW"];
+			console.log(cars[0] + ' ' + cars[1] + ' ' + cars[2]);
+		}
+		function writePerson() {
+			var person = { firstname: "Dávid", lastname: "Kiss", age: 64, address: "Miskolc" };
+			console.log(person.firstname + ' ' + person.lastname + ' ' + person.age + ' ' + person.address);
+		}
+		function writeBookDetails() {
+			var book = {
+				writer: 'Writer1',
+				title: 'Title1',
+				price: 1500,
+				add: function (count) {
+					this.price = this.price + count;
+
+				},
+	           tax: function() {
+					return this.price * 0.27;
+				}
+
+			}
+			console.log(book.writer + ' ' + book.title + ' ' + book.tax());
+			book.add(1000);
+			console.log(book.tax());
+		}
+		function writeFruits() {
+			var fruits, i;
+
+			fruits = ["Banana", "Lime", "Apple", "Mango"];
+
+			for (i = 0; i < fruits.length; i++) {
+				console.log(fruits[i]);
+			}
+		}
+		function writeDays() {
+			var day;
+			switch (new Date().getDay()) {
+				case 0:
+					day = "Sunday";
+					break;
+				case 1:
+					day = "Monday";
+					break;
+				case 2:
+					day = "Tuesday";
+					break;
+				case 3:
+					day = "Wednesday";
+					break;
+				case 4:
+					day = "Thurstday";
+					break;
+				case 5:
+					day = "Friday";
+					break;
+				case 6:
+					day = "Saturday";
+			}
+			alert(day);
+			}
+			function Person(firstname, lastname, age, address) {
+
+				this.firstname = firstname;
+				this.lastname = lastname;
+				this.age = age;
+				this.address = address;
+			}
+			function writePerson() {
+				var p = new Person('Dávid', 'Kiss', 15, 'Miskolc');
+				alert(p.firstname + ' ' + p.lastname + ' ' + p.age + ' ' + p.address);
+				var szt = [];
+				szt[0] = new Person('Vera', 'Kovács', 17, 'Kazincbarcika');
+				console.log(szt[0].firstname);
+
+			}
+			function above() {
+				alert("some text");
+
+			}
+
+
+
+	</script>
+</head>
+
+<body>
+	<h1>Examples
+		<h1/>
+		<br>
+		<br>
+		<input type="button" value="Add two number" onClick="addTwoNumber();" />
+		<input type="button" value="Details" onClick="details();" />
+		<input type="button" value="Random number" onClick="writeRandomNumbers(3);" />
+		<input type="button" value="Cars "onClick="writeCars();" />
+		<input type="button" value="Person" onClick="writePerson();" />
+		<input type="button" value="Book" onClick="writeBookDetails();" />
+		<input type="button" value="Fruits" onClick="writeFruits();" />
+		<input type="button" value="Days" onClick="writeDays();" />
+	    <!--<div onmouseover="above();">Drag the mouse over this text </div>-->
+</body>
+
+</html>

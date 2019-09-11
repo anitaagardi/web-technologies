@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+
+$(document).ready(
+function () {
+ $("#a").click(
+ function ( e )
+ {
+   e.preventDefault();
+  $("#a").load("1.html");
+ });
+ 
+ $("#b").click(
+ function ( e )
+ {
+   e.preventDefault();
+  $("#b").load("1.html div");
+ });
+});
+</script>
+<body>
+<div id="a"> Here goes something </div>
+
+<div id="b"> Here goes another content </div>
+</body>
+</html>

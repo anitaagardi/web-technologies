@@ -1,0 +1,25 @@
+<html>
+   <head>
+      <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+      
+      <script src="jquery-3.3.1.min.js"></script>
+      <script>
+	  $(document).ready(function() {
+	   $("#readjson").click(function(event){
+		  $.getJSON('personsimple.json', function(datas) {
+			 $('#str').html('<h2> Info</h2>');
+			 $('#str').append('<p><b>Name: </b>'+datas.name+'</p>');
+			 $('#str').append('<p><b>Age: </b>'+datas.age+'</p>');
+			$('#str').append('<p><b>Profession: </b>'+datas.profession+'</p>');
+			 $('#str').append('<p><b>Payment: </b>'+datas.payment+'</p>');
+		  });
+	   });
+	});
+	  
+	  </script>
+   </head>
+   <body>
+      <input type="button" id="readjson" value="JSON reading person" />
+      <div id="str"></div>
+   </body>
+</html>
