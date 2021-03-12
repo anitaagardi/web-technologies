@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script>
+        function longOperation(callback) {
+            //ez lehetne ajax stb..
+            setTimeout(function () {
+                console.log("longOperation tenyleg vege");
+                var result = 500;
+                callback(result);
+            }, 1000);
+        }
+
+        function otherLongOperation(callback) {
+            //ez lehetne ajax stb..
+            setTimeout(function () {
+                console.log("otherLongOperation tenyleg vege");
+                var result = 600;
+                callback(result);
+            }, 500);
+        }
+
+    </script>
+    <script>
+        longOperation(function (resultA) {
+            console.log(`From callback ${resultA}`)
+        });
+
+        //callback hell
+        longOperation(function (resultA) {
+            otherLongOperation(function (resultB) {
+                console.log(`From nested callbacks ${resultA} ${resultB}`)
+            })
+        });
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
