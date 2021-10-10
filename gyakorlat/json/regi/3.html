@@ -6,7 +6,7 @@
       <script>
 	  $(document).ready(function() {
 	   $("#readjson").click(function(event){
-		  $.getJSON('persons.json', function(datas) {
+		  $.getJSON('http://localhost:3000/persons', function(datas) {
 		  for(i=0;i<datas.length;i++){
 				 $('#str').html('<h2> Info</h2>');
 				 $('#str').append('<p><b>Name: </b>'+datas[i].firstName+' '+datas[i].lastName+'</p>');

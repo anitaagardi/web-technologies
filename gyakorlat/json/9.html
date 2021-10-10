@@ -1,16 +1,15 @@
 <html>
-<body>
+  <body>
+    <p>Use bracket notation to access the property values.</p>
 
-<p>Use bracket notation to access the property values.</p>
+    <p id="demo"></p>
 
-<p id="demo"></p>
-
-<script>
-var myObj = {"name":"John", "age":30, "car":null};
-for (x in myObj) {
-    document.getElementById("demo").innerHTML += myObj[x] + "<br>";
-}
-</script>
-
-</body>
+    <script>
+      var myObj = { name: "John", age: 30, car: null };
+      for (x in myObj) {
+        document.getElementById("demo").innerHTML +=
+          myObj[x] + +myObj.x + "<br>";
+      }
+    </script>
+  </body>
 </html>

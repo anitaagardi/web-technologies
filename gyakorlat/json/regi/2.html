@@ -6,14 +6,14 @@
       <script>
 	  $(document).ready(function() {
 	   $("#readjson").click(function(event){
-		  $.getJSON('person.json', function(datas) {
+		  $.getJSON('http://localhost:3000/personobject', function(datas) {
 			 $('#str').html('<h2> Info</h2>');
 			 $('#str').append('<p><b>Name: </b>'+datas.firstName+' '+datas.lastName+'</p>');
-			 $('#str').append('<p><b>Address: </b>'+datas.address.postalCode+' '+datas.address.state+' '+
-				datas.address.city+' '+datas.address.streetAddress+'</p>');
+			 $('#str').append('<p><b>Address: </b>'+datas.address["postal code"]+' '+datas.address.state+' '+
+				datas.address.city+' '+datas.address['street number']+'</p>');
 			 $('#str').append('<p><b>Phone number(s): </b><ul>');
-			 for(i=0;i<datas.phoneNumbers.length;i++){
-				$('#str').append('<li>'+datas.phoneNumbers[i]+'</li>');
+			 for(i=0;i<datas["phone number"].length;i++){
+				$('#str').append('<li>'+datas["phone number"][i].type+' '+datas["phone number"][i].number +'</li>');
 			 }
 		  });
 	   });
