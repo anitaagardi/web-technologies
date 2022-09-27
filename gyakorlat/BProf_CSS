@@ -1,0 +1,19 @@
+- Háttér világos kék
+- a html-en belül a betűméret 25 px
+- a bekezdések (<p>) szöveg színe legyen világos szürke, középre igazítás
+- legyen egy blueClass osztály, és ez legyen az osztálya néhány html elemnek. 
+Az osztályba tartozó elemek szöveg színe legyek kék
+- legyen egy important azonosítójú div, aminek a betűmérete 50px
+- legyen egy borderClass nevű osztály, ami az alábbi beállításokat tartalmazza
+és legyen egy div, aminek ez az osztálya:
+15 px-es keret
+10 px-es padding
+10 px-es margin
+a border-style legyen dotted (pontozott)
+és legyen a keret lekerekítése (border-radius) 5 px.
+- legyen egy táblázat ami az alábbi beállításokat tartalmazza
+(segítség a 48.html):
+minden második sorának legyen más a háttere
+ha az adott soron van az egér, akkor legyen egy 3. szín a háttere
+egyszeres kerete legyen (table-re border-collapse: collapse;)
+legyen a táblázat elemeire egy kis paddig, margó (5px)
