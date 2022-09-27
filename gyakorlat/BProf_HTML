@@ -1,0 +1,26 @@
+Egy html:
+- első szintű címsor
+- bekezdés
+- egy képet
+- egy táblázatot, aminek min 3 sora, 3 oszlopa
+- űrlap elemek:
+	- szöveges beviteli mező: egy, több soros
+	- checkbox
+	- radio button
+	- színválasztó
+	- dátum választás
+------------------------------
+-  számozott lista, 5 elemmel,
+ egyik eleme további számozott lista 3 elemmmel
+-  pontozott lista, 5 elemmel,
+egyik eleme további pontozott lista 3 elemmmel
+- olyan kép, ami alt attribútumot tartalmaz,
+és nincs meg a kép
+- style attribútum:
+		* egy div-nek, és legyen a szöveg színe piros
+		* egy másik div-nek, és legyen a szöveg mérete 50px
+		* egy másik div-nek a szövege legyen más betűtípusú
+		font family állítása
+		* egy másik div, szöveg alsó és felső index
+		 
+		
