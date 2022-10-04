@@ -1,0 +1,13 @@
+Készítsünk űrlapot a következő elemekkel, amely egy diák adatait reprezentálja:
+ - név
+ - lakcím
+ - kor (csak szám lehet, 18-tól nagyobb, 100-tól kisebb)
+ -anyja neve
+ - egyetem neve
+ - kar neve
+ - szak neve
+ - diákigazolvány szám (csak szám lehet, 11 db szám)
+ - checkbox, amely adatkezelési szabályzatot tartalmaz, ezt el kell fogadni
+ Egyik beviteli mező értéke sem lehet üres, kötelező megadni nekik értéket.
+ Amennyiben hibás az adat, akkor pirossal írja ki az elem alá, hogy az hibás, és adjon a beviteli mezőnek piros keretet.
+ 
