@@ -1,0 +1,6 @@
+- Emberek objektum, az alábbi tulajdonságokkal: név, életkor, lakcím
+- Gombra kattintva kiíródik egy div-be az emberek adattagjai
+- Gombra kattintva egy másik div-be egy véletlen szám íródik ki
+- Autók tömbje, ahol az autók az alábbi adattagokat tartalmazzák: típus, szín, évjárat
+- Az autók tömb elemeit kiíratni egy másik gombra kattintva egy másik div-be ahol az elemek egy-egy lista elemek
+- Egy másik gombra kattintva az aktuális dátumot kiírni (formázva)
