@@ -8,3 +8,4 @@
 -nem (nő/férfi) (checkbox)
 
 Ha nem megfelelő a beviteli mező értéke, akkor kapjon piros keretet és legyen egy div, ahova kiíródik, hogy mi a hiba.
+Csak JavaScript-el, és egy másik verzió ahol jQuery-vel.
