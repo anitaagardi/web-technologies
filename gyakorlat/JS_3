@@ -13,3 +13,4 @@ Lakcím külön mezőkkel:
 
 Ha nem jó valamelyik érték, akkor adjon a gombra kattintásra piros hátteret neki.
 Legyen a mezők fölött egy-egy szöveg is, olyan kiírással, hogy mi az ami nem megfelelő.
+Csak Javascript-el és egy másik verzió ahol JQuery is van.
