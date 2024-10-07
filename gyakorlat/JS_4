@@ -1,0 +1,7 @@
+Animáció:
+- kép mérete megváltozik
+- képnek keretet adunk
+- kép opacity (átlátszóság) állítása
+
+Táblázat:
+- ha az egérrel a táblázat adott sora felett vagyunk, akkor nagyobb keretet kapjon
