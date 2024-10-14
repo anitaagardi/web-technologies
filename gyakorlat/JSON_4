@@ -1,0 +1,10 @@
+JSON fájl létrehozása egy cégnek, az alábbi property-vel (adjunk nekik értéket is):
+-cég neve
+-árbevétel
+-ügyvezető neve
+-székhely
+-munkavállalók (objektumok tömbje), az alábbi property-vel:
+  - név
+  - anyja neve
+  - fizetés
+  - beosztás
