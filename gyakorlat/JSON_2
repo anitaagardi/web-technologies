@@ -1,0 +1,8 @@
+JSON fájl létrehozása emberek tömbje (3 elemmel). Az alábbi property-ket tartalmazzák az emberek (adjunk nekik értéket is):
+-név
+-életkor 
+-anyja neve
+-lakcím
+-fizetés
+-szakma
+-munkahely
