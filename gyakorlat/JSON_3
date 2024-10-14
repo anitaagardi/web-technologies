@@ -1,0 +1,7 @@
+JSON fájl létrehozása egy tanulónak, az alábbi property-vel (adjunk nekik értéket is):
+-név
+-életkor 
+-egyetem
+-tantárgyak (tömb, ami néhány tantárgyat tartalmaz)
+-végzős hallgató-e (boolean)
+
