@@ -1,0 +1,23 @@
+-oszlopok (col): col-3, col-5,col-4
+-oszlopok (col):col-6,col-6
+-oszlopok (col): col-7, col-7
+-h1-h6
+-szöveg színek: .text-primary, .text-success, .text-info, .text-warning, .text-danger, .text-secondary
+- háttérszín pl div-nek: bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light
+- sima táblázat (table osztály csak)
+- csíkos táblázat (table-striped)
+- szegélyes táblázat(table-bordered)
+- hover táblázatra (table-hover)
+- sötét táblázat (table-dark)
+-a fenti táblázati típusok kombinációja pl csíkos, sötét, hover
+- táblázat (vagy csak sor, cella) színezése: table-primary, table-success, table-danger, table-info, table-warning, table-active, table-secondary
+- kép: rounded, rounded-circle, img-thumbnail
+- alert (sima): .alert-success, .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark
+- alert (bezárható): .alert-success, .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or .alert-dark
+- gombok (sima): success, info, warning, danger, primary, secondary, light, dark
+- gombok (btn-outline): success, info, warning, danger, primary, secondary, light, dark
+- gomb+spinner
+- gombcsoport (btn-group)
+- gomb+badge
+- progress bar (sima, csíkozott,csíkozott+animált)
+
