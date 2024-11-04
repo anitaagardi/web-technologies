@@ -1,0 +1,6 @@
+- pagination készítése
+- pagination, ahol egy active és egy disabled elem van
+- breadcrumbs készítése
+- listacsoport (list-group)
+- listacsoport, ahol az alábbi színek is megtalálhatóak: success, info, warning, danger, primary, secondary, light, dark
+- listacsoportoknak badges 
